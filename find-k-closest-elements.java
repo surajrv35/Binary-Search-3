@@ -19,7 +19,7 @@ class Solution {
         {
             int mid = low+(high-low)/2;
             
-            if(Math.abs(x-arr[mid]) > Math.abs(arr[mid+k]-x))
+            if(x-arr[mid] > arr[mid+k]-x)
                 low = mid+1;
             else
                 high = mid;
